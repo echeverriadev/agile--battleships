@@ -1,6 +1,6 @@
 $(function() {
   var game;
-
+  
   $("#newGame").bind("click", function() {
     if (game) {
       game.destroy();

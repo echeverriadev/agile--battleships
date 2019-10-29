@@ -11,7 +11,7 @@
 		<script type="text/javascript" src="javascripts/ext/jquery.numberformatter.js"></script>
 		<script type="text/javascript" src="javascripts/ext/backbone.js"></script>
 		<script type="text/javascript" src="javascripts/ext/icanhaz.js"></script>
-
+	
 		<script type="text/javascript" src="javascripts/app/Boat.js"></script>
 		<script type="text/javascript" src="javascripts/app/Cell.js"></script>
 		<script type="text/javascript" src="javascripts/app/Board.js"></script>
@@ -21,12 +21,16 @@
 		
 		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+		<script type="text/javascript" src="javascripts/ext/raphael.min.js"></script>
+		<script type="text/javascript" src="javascripts/ext/morris.min.js"></script>
 
 		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="vendor/animate.css">
 		<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="stylesheets/morris.css">
+
 
 		<script id="board" type="text/html">
 			<td>{{ name }}</td>
@@ -34,7 +38,6 @@
 	</head>
 	<body>
 		<div class="container">
-
 			<nav class="navbar navbar-default ">
 			  <div class="container-fluid">
 			    <div class="navbar-header">
@@ -65,11 +68,17 @@
 			</div>
 
 			<div class="row vertical-align">
-
 	  		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-lg-offset-1"> 
 	  			<div class="row stats animated fadeInRight hidden">
 
 						<div class="col-xs-12 text-center">
+							<div id="chart" class="row" >
+								<div class="col-xs-12 ">
+									<span id="costPerShotHidden" style="display: none;"></span>
+									<h2 align="center">Tabla de Ganancias Pérdidas</h2> 
+									<div id="myfirstchart" style="height: 250px;"></div>
+								</div>
+							</div>
 							<i class="fa fa-ship fa-5x animated pulse"></i>
 							<h2></h2>
 						</div>
@@ -141,7 +150,8 @@
 		
 	
 		<footer class="text-center">Créditos a Zilverline / Daniël van Hoesel, Bob Forma, Mark Suurmond. Inspirado por <a href="https://github.com/zilverline/battleship">Battleship</a></footer>
-
+	
+		<script type="text/javascript" src="javascripts/app/Chart.js"></script>
 		
 	</body>
 
