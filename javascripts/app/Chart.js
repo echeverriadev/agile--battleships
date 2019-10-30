@@ -3,9 +3,14 @@ var Chart = new Morris.Area({
   data: [{x: '0', y: 0}],
   xkey: 'x',
   ykeys: ['y'],
-  labels: ['Ganancias/Pérdidas'],
+  labels: ['Disparo'],
   parseTime: false,
   integerYLabels: true,
-  lineColors: ['#31708f']
+  fillOpacity: 0.6,
+  hideHover: 'auto',
+  behaveLikeLine: true,
+  resize: true,
+  pointFillColors:['#ffffff'],
+  pointStrokeColors: ['black']
 })
 

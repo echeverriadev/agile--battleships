@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="vendor/animate.css">
 		<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" charset="utf-8">
 		<link rel="stylesheet" href="stylesheets/morris.css">
+		<link rel="stylesheet" href="stylesheets/custom.css">
 
 
 		<script id="board" type="text/html">
@@ -56,7 +57,7 @@
 
 			  </div>
 			</nav>
-
+	
 			<span id="endGameResult"></span>
 
 			<div class="row message">
@@ -66,22 +67,22 @@
 					<p class="lead">Inicia un nuevo juego seleccionando el número de disparos por iteración</p>
 				</div>
 			</div>
+				
+			<div class="col-xs-12 text-center">
+				<div id="chart" class="row" >
+					<div class="col-xs-12 ">
+						<span id="costPerShotHidden" style="display: none;"></span>
+						<h2 align="center">Tabla de Ganancias Pérdidas</h2> 
+						<div id="myfirstchart" style="height: 250px;"></div>
+					</div>
+				</div>
+				<i class="fa fa-ship fa-5x animated pulse"></i>
+				<h2></h2>
+			</div>
 
 			<div class="row vertical-align">
 	  		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-lg-offset-1"> 
 	  			<div class="row stats animated fadeInRight hidden">
-
-						<div class="col-xs-12 text-center">
-							<div id="chart" class="row" >
-								<div class="col-xs-12 ">
-									<span id="costPerShotHidden" style="display: none;"></span>
-									<h2 align="center">Tabla de Ganancias Pérdidas</h2> 
-									<div id="myfirstchart" style="height: 250px;"></div>
-								</div>
-							</div>
-							<i class="fa fa-ship fa-5x animated pulse"></i>
-							<h2></h2>
-						</div>
 
 		  			<div class="col-xs-12">
 			  			<div class="panel panel-info">
