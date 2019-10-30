@@ -1,6 +1,7 @@
 $(function() {
   var game;
   
+  $('#chart').hide();
   $("#newGame").bind("click", function() {
     if (game) {
       game.destroy();

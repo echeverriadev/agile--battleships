@@ -19,7 +19,7 @@ var Game = Backbone.Model.extend({
       y: this.get("funds")
     }]);
     this.set("shots", 0);
-
+    $('#chart').show();
     Chart.setData(this.get("chartData"));
 
     this.sunken = 0;
