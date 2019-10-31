@@ -1,7 +1,56 @@
-#myfirstchart,
-#line-chart,
-#bar-chart,
-#stacked,
-#pie-chart{
-  min-height: 250px;
+.navbar-brand{
+  height: 115px;
+}
+
+.navbar-form{
+  margin-top: 29px;
+}
+
+.btn-info{
+  color: #fff;
+  background-color: #00a99d;
+  border-color: #00a99d;
+}
+
+.btn-info:hover{
+  color: #fff;
+  background-color: #1e6f69;
+  border-color: #1e6f69;
+}
+
+.btn-info:active:hover{
+  background: #1e6f69;
+}
+
+.btn-info:focus{
+  color: #fff;
+  background-color: #00a99d;
+  border-color: #00a99d;
+}
+.title{
+font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
+color: #292929;
+font-weight: bold;
+font-size: 2.875em;
+}
+
+.sub-title{
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
+color: #292929;
+font-size: 1.375em;
+line-height: 1.2em;
+font-weight: bold;
+}
+
+.ship{
+  height: 280px;
+  width: 350px;
+}
+
+.navbar-form .input-group > .form-control{
+  width: 110px;
+}
+
+.ml{
+  margin-left: 50px;
 }

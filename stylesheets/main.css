@@ -4,7 +4,7 @@ footer {
 
 .board {
   border-collapse: collapse;
-  background-color: #d9edf7;
+  background-color: #58b9b2c4;
 	color: #333;
 }
 
@@ -97,7 +97,7 @@ footer {
 }
 
 .huge {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 @media(min-width:768px){
