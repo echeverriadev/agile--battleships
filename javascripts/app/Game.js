@@ -14,12 +14,26 @@ var Game = Backbone.Model.extend({
     this.set("shotsRemainingForGame", this.get("maxShots"));
     this.set("funds", this.get("maxShots") * this.get("costPerShot"));
     $('#costPerShotHidden').html(this.get("costPerShot"))
+    $('#shots').html(this.get("shots"))
     this.set("chartData", [{
       x: 0,
       y: this.get("funds")
     }]);
+
+    var chartData = this.get('chartData');
+
+    for(var i=1; i<=40; i++){
+      let data = {
+        x: i,
+        y:0
+      }
+      chartData.push(data)
+    }
+
     this.set("shots", 0);
     $('#chart').show();
+    Chart.redraw();
+    $(window).trigger('resize');
     Chart.setData(this.get("chartData"));
 
     this.sunken = 0;
@@ -61,6 +75,7 @@ var Game = Backbone.Model.extend({
   },
   shotFired: function() {
     this.set("shots", this.get("shots") + 1);
+    $('#shots').html(this.get("shots"))
     this.set("shotsRemainingForIteration", this.get("shotsRemainingForIteration") - 1);
     this.set("funds", this.get("funds") - this.get("costPerShot"));
     this.set("shotsRemainingForGame", this.get("shotsRemainingForGame") - 1);
@@ -76,16 +91,16 @@ var Game = Backbone.Model.extend({
         y: FUNDS
       }])
 
-      chartData.push({
+      chartData[this.get("shots")] = {
         x: this.get("shots"),
         y: FUNDS
-      })
+      }
 
     }else{
-      chartData.push({
+      chartData[this.get("shots")] = {
         x: this.get("shots"),
         y: FUNDS
-      })
+      }
     }
 
 
@@ -107,14 +122,14 @@ var Game = Backbone.Model.extend({
     this.set("funds", this.get("funds") + boat.length() * this.get("sunkenBoatCellReward"));
   
     let chartData = this.get("chartData");
-    chartData.pop();
+    //chartData.pop();
     const COST_PER_SHOT_ON_UNIT = this.get("costPerShot");
     const FUNDS = this.get("funds");
 
-    chartData.push({
+    chartData[this.get('shots')] = {
       x: this.get("shots"),
       y: FUNDS
-    })
+    }
     
     Chart.setData(chartData);
 

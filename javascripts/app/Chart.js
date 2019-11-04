@@ -10,6 +10,7 @@ var Chart = new Morris.Area({
   hideHover: 'auto',
   behaveLikeLine: true,
   resize: true,
+  pointSize:3,
   pointFillColors:['#ffffff'],
   pointStrokeColors: ['black']
 })
