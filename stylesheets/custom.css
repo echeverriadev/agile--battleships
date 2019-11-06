@@ -1,9 +1,17 @@
-.navbar-brand{
-  height: 115px;
+.btn-css {
+  margin-top: 30px;
+}
+
+.navbar-brand-agile{
+  height: 90px;
+}
+
+.navbar-brand-agile-2{
+  height: 110px;
 }
 
 .navbar-form{
-  margin-top: 29px;
+  margin-top: 0px;
 }
 
 .btn-info{
@@ -28,23 +36,23 @@
   border-color: #00a99d;
 }
 .title{
-font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
-color: #292929;
-font-weight: bold;
-font-size: 2.875em;
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
+  color: #292929;
+  font-weight: bold;
+  font-size: 2.875em;
 }
 
 .sub-title{
   font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
-color: #292929;
-font-size: 1.375em;
-line-height: 1.2em;
-font-weight: bold;
+  color: #292929;
+  font-size: 1.375em;
+  line-height: 1.2em;
+  font-weight: bold;
 }
 
 .ship{
-  height: 280px;
-  width: 350px;
+  height: 224px;
+  width: 340px;
 }
 
 .navbar-form .input-group > .form-control{
@@ -52,5 +60,94 @@ font-weight: bold;
 }
 
 .ml{
-  margin-left: 50px;
+  background: red;
+}
+
+
+.mla{
+  background: blue;
+}
+
+.toknow{
+  background: #e6e9ed;
+  padding-top:9px;
+  padding-left:30px;
+  padding-bottom: 15px;
+}
+
+.toknow h4{
+  color:#00a99d;
+  font-size: 1.95rem;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.toknow ul{
+  padding-left:14px;
+  padding-right:14px;
+}
+
+hr{
+  margin-top:8px;
+  margin-bottom:8px;
+}
+
+.col-md-offset-1 {
+  margin-left: 4%;
+}
+
+.instruction h4{
+  color:#00a99d;
+  font-size: 1.95rem;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.text-explain{
+  text-align: justify
+}
+
+.image{
+  width: 145px;
+  height: 145px;
+}
+
+.message {
+  margin-left: 80px;
+}
+
+@media (max-width: 768px) { 
+  .image{
+    display: none;
+  }
+  .message {
+    margin-left: 0;
+  }
+  .navbar-brand-agile {
+    height: 75px;
+  }
+  .navbar-toggle{
+    margin-top: 20px !important;
+  }
+  .btn-css {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    margin-right: 0px;
+  }
+  .custom-ul {
+    display: none !important;
+  }  
+  .custom-ul-2 {
+    display: block !important;
+  }
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.custom-ul-2 {
+  display: none;
 }

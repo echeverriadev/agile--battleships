@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>Battleships</title>
+		<meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script type="text/javascript" src="javascripts/ext/underscore.js"></script>
+		<script type="text/javascript" src="vendor/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="javascripts/ext/jshashtable-2.1.js"></script>
+		<script type="text/javascript" src="javascripts/ext/jquery.numeric.js"></script>
+		<script type="text/javascript" src="javascripts/ext/jquery.numberformatter.js"></script>
+		<script type="text/javascript" src="javascripts/ext/backbone.js"></script>
+		<script type="text/javascript" src="javascripts/ext/icanhaz.js"></script>
+	
+		
+		<script type="text/javascript" src="javascripts/boot.js"></script>
+		
+		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="javascripts/ext/raphael.min.js"></script>
+		<script type="text/javascript" src="javascripts/ext/morris.min.js"></script>
+
+		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/animate.css">
+		<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="stylesheets/morris.css">
+		<link rel="stylesheet" href="stylesheets/custom.css">
+
+
+		<script id="board" type="text/html">
+			<td>{{ name }}</td>
+		</script>
+	</head>
+	<body>
+		<div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img class="navbar-brand navbar-brand-agile responsive" src="./images/logo-4a.png" alt="Logo 4Agile">
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right btn-css">
+                            <li> 
+                                <span class="input-group">
+                                    <a href="index.html" class="btn btn-info" type="button" id="newGame" style="border-radius: 4px;">Jugar!</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="tittle">
+                <h2>Agile BattleShip</h2>
+                <p>
+                    Usaremos este jugaremos para entender de qué va y cómo funciona la filosofía ágil para el seguimiento, pruebas y desarrollo de producto para un sistema.
+                    ¿En qué consiste y cómo jugaremos BattleShip?
+                </p>
+            </div>
+            <br><br>
+            <div class="body">
+                <div class="col-lg-4 col-xs-12">
+                    <div class="toknow">
+                            <h4>Debes saber:</h4>
+                            <ul>
+                                <li>
+                                    Habrá cinco barcos de diferentes tamaños: 
+                                    <ul>
+                                        <li>Un barco de cinco bloques</li>
+                                        <li>Un barco de cuatro bloques</li>
+                                        <li>Dos barcos de tres bloques/li>
+                                        <li>Un barco de dos bloques</li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li>
+                                    Solo se gana dinero (aumenta tu capital de inversión) destruyendo o hundiendo barcos completos.
+                                </li><hr>
+                                <li>
+                                    Se tendrán 40 disparos disponibles en una partida.
+                                </li><hr>
+                                <li>
+                                    Los barcos solo estarán ubicados de forma vertical u horizontal.
+                                </li><hr>
+                                <li>
+                                    Se mostrará en pantalla el total de disparos restantes de la partida y total de disparos restantes de la iteración.
+                                </li><hr>
+                                <li>
+                                    Se mostrará en pantalla el monto del capital de inversión a medida que aumenta o disminuye.
+                                </li>
+                            </ul>
+                    </div> <br>
+                    <div align="center">
+                        <img  class="image" src="images/boat.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-lg-offset-1 col-xs-12 instruction">
+                    <h4>¿Como lo jugaremos?</h4>
+                    <p class="text-explain">
+                        El objetivo del juego es que el jugador o mercenario, en la menor cantidad de disparos e iteraciones posibles, descubra por completo, la totalidad de barcos dentro de la cuadrícula y los hunda o destruya. El mercenario verá su ganancia total, a final de la partida, el total de su capital de inversión, y una notificación con un resumen que le mostrará de cuánto dinero fueron sus pérdidas y/o ganancias. Esta notificación será de color rojo si hubo pérdidas, verde si hubo ganancias y azul si se mantuvo el dinero de su inversión inicial.
+                    </p>
+                    <br>
+                    <div>
+                        <h4>Relación con el agilismo:</h4>
+                        <p class="text-explain">
+                            Las metodologías ágiles permiten mejorar la calidad del producto, gracias a la continua interacción entre los desarrolladores y los clientes se logra el objetivo de asegurar que el producto final sea exactamente lo que el cliente busca y necesita. Con este enfoque es posible lograr la excelencia tecnológica obteniendo así, un producto tecnológicamente satisfactorio. 
+                        </p>
+                        <p class="text-explain">
+                            Tomemos como ejemplo a SCRUM que es una metodología ágil en la que, un grupo de trabajo, tiene unas tareas que ha de desarrollar en un período de tiempo determinado, denominados como sprints que, en este caso cada partida en BattleShip, sería como un sprint. En SCRUM se trabaja con ciclos cortos de trabajo, y estos se caracterizan porque se realizan reuniones de forma periódica con el cliente, el cual está muy involucrado y es conocedor de cómo se avanza durante todo el proceso.
+                                A nivel de organización interno, también se hacen diariamente las reuniones de grupo conocidas como Dailys, reuniones breves al inicio de la jornada para hacer una revisión de lo que se hizo el día anterior, qué problemas surgieron y qué se va a hacer a lo largo del día; relacionamos un daily, con cada iteración u oportunidad que tenemos para jugar luego de ver los resultados de la primera iteración, para saber qué corregir y cómo jugar, mientras que los disparos serán las pruebas a las que sometemos el producto y en las que detectamos si hay o no, alguna falla que arreglar. En la cada partida, los resultados luego de un disparo hacen referencia al feedback recibido del cliente acerca del producto en desarrollo, al final de cada sprint, a diferencia de el desarrollo tradicional (Cascada) que recibe feedback del cliente luego de muchos avances, es decir, después de agotar, por completo, representado por los 40 disparos totales. 
+                                
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br>
+		
+		<script type="text/javascript" src="javascripts/app/Chart.js"></script>
+		<script type="text/javascript" src="javascripts/app/Boat.js"></script>
+		<script type="text/javascript" src="javascripts/app/Cell.js"></script>
+		<script type="text/javascript" src="javascripts/app/Board.js"></script>
+		<script type="text/javascript" src="javascripts/app/Game.js"></script>
+
+	</body>
+
+</html>
