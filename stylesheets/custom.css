@@ -2,112 +2,111 @@
   margin-top: 30px;
 }
 
-.navbar-brand-agile{
+.navbar-brand-agile {
   height: 90px;
 }
 
-.navbar-brand-agile-2{
+.navbar-brand-agile-2 {
   height: 110px;
 }
 
-.navbar-form{
+.navbar-form {
   margin-top: 0px;
 }
 
-.btn-info{
+.btn-info {
   color: #fff;
   background-color: #00a99d;
   border-color: #00a99d;
 }
 
-.btn-info:hover{
+.btn-info:hover {
   color: #fff;
   background-color: #1e6f69;
   border-color: #1e6f69;
 }
 
-.btn-info:active:hover{
+.btn-info:active:hover {
   background: #1e6f69;
 }
 
-.btn-info:focus{
+.btn-info:focus {
   color: #fff;
   background-color: #00a99d;
   border-color: #00a99d;
 }
-.title{
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
+.title {
+  font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
   color: #292929;
   font-weight: bold;
   font-size: 2.875em;
 }
 
-.sub-title{
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
+.sub-title {
+  font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
   color: #292929;
   font-size: 1.375em;
   line-height: 1.2em;
   font-weight: bold;
 }
 
-.ship{
+.ship {
   height: 224px;
   width: 340px;
 }
 
-.navbar-form .input-group > .form-control{
+.navbar-form .input-group > .form-control {
   width: 110px;
 }
 
-.ml{
+.ml {
   background: red;
 }
 
-
-.mla{
+.mla {
   background: blue;
 }
 
-.toknow{
+.toknow {
   background: #e6e9ed;
-  padding-top:9px;
-  padding-left:30px;
+  padding-top: 9px;
+  padding-left: 30px;
   padding-bottom: 15px;
 }
 
-.toknow h4{
-  color:#00a99d;
+.toknow h4 {
+  color: #00a99d;
   font-size: 1.95rem;
   font-weight: bold;
   line-height: 40px;
 }
 
-.toknow ul{
-  padding-left:14px;
-  padding-right:14px;
+.toknow ul {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
-hr{
-  margin-top:8px;
-  margin-bottom:8px;
+hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .col-md-offset-1 {
   margin-left: 4%;
 }
 
-.instruction h4{
-  color:#00a99d;
+.instruction h4 {
+  color: #00a99d;
   font-size: 1.95rem;
   font-weight: bold;
   line-height: 40px;
 }
 
-.text-explain{
-  text-align: justify
+.text-explain {
+  text-align: justify;
 }
 
-.image{
+.image {
   width: 145px;
   height: 145px;
 }
@@ -116,67 +115,69 @@ hr{
   margin-left: 80px;
 }
 
-.pequena{
+.pequena {
   display: none;
 }
 
-.navbar-form{
-  margin-top:35px;
+.navbar-form {
+  margin-top: 35px;
 }
 
-@media (max-width: 770px) { 
-  .pequena{
+@media (max-width: 770px) {
+  .pequena {
     display: block;
-    margin-top:18px;
+    margin-top: 18px;
   }
-  .navbar-header{display: flex;
+  .navbar-header {
+    display: flex;
     justify-content: center;
   }
-  .grande{display: none;}
+  .grande {
+    display: none;
+  }
   .navbar-form .input-group > .form-control {
     width: 55px !important;
     height: 25px !important;
+  }
+
+  .btn {
+    font-size: 8px !important;
+    margin-bottom: 5px;
+  }
+
+  .navbar-form {
+    padding: 10px 1px;
+    margin-right: -15px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    border-top: 0px solid transparent;
+  }
+
+  .title {
+    font-size: 1.875em !important;
+    color: #00a99d !important;
+  }
+
+  .navbar-ins {
+    margin-top: 54px !important;
+  }
 }
 
-.btn{
-  font-size: 8px !important;
-  margin-bottom: 5px;
-}
-
-.navbar-form {
-  padding: 10px 1px;
-  margin-right: -15px;
-  margin-bottom: 8px;
-  border-bottom: 1px solid transparent;
-  border-top: 0px solid transparent;
-}
-
-.title{
-  font-size: 1.875em !important;
-  color:#00a99d !important;
-}
-
-.navbar-ins {
-  margin-top: 54px !important;
-}
-}
-
-
-@media (max-width: 1000px) { 
-  .invisible-txt{
+@media (max-width: 1000px) {
+  .invisible-txt {
     display: none;
   }
   .navbar-form .input-group > .form-control {
     width: 55px;
     height: 26.85;
-}
-.btn{
-  font-size: 9px;
-}
-  .navbar-form{
-    margin-top:25px;
   }
-  .image{
+  .btn {
+    font-size: 9px;
+  }
+  .navbar-form {
+    margin-top: 25px;
+  }
+  .image {
     display: none;
   }
   .message {
@@ -188,8 +189,8 @@ hr{
   .navbar-brand-agile {
     height: 95px;
   }
-  .title{
-    font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,Sans-Serif;
+  .title {
+    font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
     color: #292929;
     font-weight: bold;
     font-size: 2.875em;
@@ -198,14 +199,14 @@ hr{
 }
 
 .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.email{
-  color:#00a99d;
+.email {
+  color: #00a99d;
 }
 
 footer {
-  margin-top:65px;
+  margin-top: 65px;
 }
