@@ -8,9 +8,10 @@ var Chart = new Morris.Area({
   integerYLabels: true,
   fillOpacity: 0.6,
   hideHover: 'auto',
-  behaveLikeLine: true,
   resize: true,
   pointSize:3,
+  smooth: false,
+  behaveLikeLine:true,
   pointFillColors:['#ffffff'],
   pointStrokeColors: ['black']
 })
