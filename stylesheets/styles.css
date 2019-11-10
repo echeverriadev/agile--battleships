@@ -1,5 +1,38 @@
-.btn-css {
-  margin-top: 30px;
+/*FOOTER*/
+footer {
+  margin-top: 65px;
+}
+
+.green-text {
+  color: #00a99d;
+}
+
+/*CHART*/
+.span-chart {
+  display: none !important;
+}
+
+.chart {
+  height: 190px;
+}
+
+/*PANELS*/
+.height-panel {
+  height: 126px;
+}
+
+/*NAVBAR*/
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-form {
+  margin-top: 35px;
+}
+
+.navbar-form .input-group > .form-control {
+  width: 110px;
 }
 
 .navbar-brand-agile {
@@ -8,10 +41,6 @@
 
 .navbar-brand-agile-2 {
   height: 110px;
-}
-
-.navbar-form {
-  margin-top: 0px;
 }
 
 .btn-info {
@@ -35,6 +64,17 @@
   background-color: #00a99d;
   border-color: #00a99d;
 }
+
+.isotipo {
+  display: none;
+}
+
+/*INIT*/
+.ship {
+  height: 224px;
+  width: 340px;
+}
+
 .title {
   font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
   color: #292929;
@@ -50,49 +90,14 @@
   font-weight: bold;
 }
 
-.ship {
-  height: 224px;
-  width: 340px;
+.message {
+  margin-left: 80px;
 }
 
-.navbar-form .input-group > .form-control {
-  width: 110px;
-}
-
-.ml {
-  background: red;
-}
-
-.mla {
-  background: blue;
-}
-
-.toknow {
-  background: #e6e9ed;
-  padding-top: 9px;
-  padding-left: 30px;
-  padding-bottom: 15px;
-}
-
-.toknow h4 {
-  color: #00a99d;
-  font-size: 1.95rem;
-  font-weight: bold;
-  line-height: 40px;
-}
-
-.toknow ul {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-hr {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.col-md-offset-1 {
-  margin-left: 4%;
+/*INSTRUCTIONS*/
+.image {
+  width: 145px;
+  height: 145px;
 }
 
 .instruction h4 {
@@ -102,47 +107,53 @@ hr {
   line-height: 40px;
 }
 
+hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .text-explain {
   text-align: justify;
 }
 
-.image {
-  width: 145px;
-  height: 145px;
+.toknow h4 {
+  color: #00a99d;
+  font-size: 1.95rem;
+  font-weight: bold;
+  line-height: 40px;
 }
 
-.message {
-  margin-left: 80px;
+.toknow {
+  background: #e6e9ed;
+  padding-top: 9px;
+  padding-left: 30px;
+  padding-bottom: 15px;
 }
 
-.pequena {
-  display: none;
-}
-
-.navbar-form {
-  margin-top: 35px;
+.toknow ul {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 @media (max-width: 770px) {
-  .pequena {
+  /*NAVBAR*/
+  .isotipo {
     display: block;
     margin-top: 18px;
   }
-  .navbar-header {
-    display: flex;
-    justify-content: center;
-  }
-  .grande {
+
+  .logotipo {
     display: none;
-  }
-  .navbar-form .input-group > .form-control {
-    width: 55px !important;
-    height: 25px !important;
   }
 
   .btn {
     font-size: 8px !important;
     margin-bottom: 5px;
+  }
+
+  .navbar-form .input-group > .form-control {
+    width: 55px !important;
+    height: 25px !important;
   }
 
   .navbar-form {
@@ -153,13 +164,37 @@ hr {
     border-top: 0px solid transparent;
   }
 
+  .navbar-ins {
+    margin-top: 54px !important;
+  }
+
+  /*INIT*/
   .title {
     font-size: 1.875em !important;
     color: #00a99d !important;
   }
 
-  .navbar-ins {
-    margin-top: 54px !important;
+  /*PANEL*/
+  .height-panel {
+    height: 160px;
+  }
+
+  .custom-panel {
+    padding-left: 6px;
+    padding-right: 1px;
+    width: 33%;
+  }
+
+  .col-custom {
+    width: auto !important;
+  }
+
+  .text-description {
+    font-size: 25px;
+  }
+
+  .description-panel {
+    font-size: 13px;
   }
 }
 
@@ -198,15 +233,19 @@ hr {
   }
 }
 
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+
+@media (max-width: 1024px) {
+  .text-custom-panel-l {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  br {
+    display: none;
+  }
 }
 
-.email {
-  color: #00a99d;
-}
-
-footer {
-  margin-top: 65px;
+@media (min-width: 760px) and (max-width: 1200px) {
+  .height-panel {
+    height: 93px;
+  }
 }
