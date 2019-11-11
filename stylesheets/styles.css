@@ -118,16 +118,31 @@ hr {
 
 .toknow h4 {
   color: #00a99d;
-  font-size: 1.95rem;
+  font-size: 2.95rem;
   font-weight: bold;
   line-height: 40px;
 }
 
 .toknow {
   background: #e6e9ed;
-  padding-top: 9px;
+  padding-top: 18px;
   padding-left: 30px;
-  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 4px
+}
+
+
+.panel-grey {
+  background: #e6e9ed;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 4px
+
 }
 
 .toknow ul {
