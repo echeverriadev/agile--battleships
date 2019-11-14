@@ -103,6 +103,10 @@ footer {
   height: 145px;
 }
 
+.movil{
+  display:none;
+}
+
 .instruction h4 {
   color: #00a99d;
   font-size: 1.95rem;
@@ -280,13 +284,22 @@ hr {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .text-custom-panel-l {
     font-size: 20px;
     font-weight: bold;
   }
   br {
     display: none;
+  }
+
+  /*INSTRUCTIONS*/
+  .movil{
+    display:block;
+  }
+
+  .web{
+    display:none
   }
 }
 
