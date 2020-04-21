@@ -5,7 +5,7 @@ footer {
 .board {
   border-collapse: collapse;
   background-color: #58b9b2c4;
-	color: #333;
+  color: #333;
 }
 
 .cell {
@@ -18,7 +18,7 @@ footer {
   position: relative;
   padding: 0;
   margin: 0;
-  width: 18px !important;
+  width: 35px !important;
 }
 
 .cell-title-top {
@@ -27,8 +27,8 @@ footer {
   border-right: 1px solid white;
   background-color: white;
   text-align: center;
-	color: #333;
-	font-size: 24px;
+  color: #333;
+  font-size: 24px;
 }
 
 .cell-title-left {
@@ -37,56 +37,56 @@ footer {
   border-bottom: 1px solid white;
   background-color: white;
   text-align: center;
-	color: #333;
+  color: #333;
   min-width: 10px;
-	font-size: 24px;
+  font-size: 24px;
 }
 
 .cell-title-bottom {
   border-top: 1px solid #bce8f1;
   border-left: 1px solid white;
-	border-right: 1px solid white;
+  border-right: 1px solid white;
   border-bottom: 1px solid white;
   background-color: white;
   text-align: center;
-	color: #333;
-	font-size: 24px;
+  color: #333;
+  font-size: 24px;
 }
 
 .cell-title-right {
   border-top: 1px solid white;
   border-left: 1px solid #bce8f1;
-	border-right: 1px solid white;
+  border-right: 1px solid white;
   border-bottom: 1px solid white;
   background-color: white;
   text-align: center;
-	color: #333;
-	font-size: 24px;
+  color: #333;
+  font-size: 24px;
 }
 
 .showBoat.aircraft-carrier {
-    background-color: #e74c3c;
-    border: 1px solid #e74c3c;
+  background-color: #e74c3c;
+  border: 1px solid #e74c3c;
 }
 
 .showBoat.battleship {
-    background-color:  #16a085;
-    border: 1px solid #16a085;
+  background-color: #16a085;
+  border: 1px solid #16a085;
 }
 
 .showBoat.submarine {
-    background-color: #f1c40f;
-    border: 1px solid #f1c40f;
+  background-color: #f1c40f;
+  border: 1px solid #f1c40f;
 }
 
 .showBoat.cruiser {
-    background-color: #4aa3df;
-    border: 1px solid #4aa3df;
+  background-color: #4aa3df;
+  border: 1px solid #4aa3df;
 }
 
 .showBoat.destroyer {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
 }
 
 #endGameResult {
@@ -101,7 +101,7 @@ footer {
   font-size: 25px;
 }
 
-@media(min-width:768px){
+@media (min-width: 768px) {
   .vertical-align {
     display: flex;
     flex-direction: row;
@@ -138,47 +138,47 @@ footer {
 }
 
 .hit {
-  -moz-animation-duration: .3s;
-  -ms-animation-duration: .3s;
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
+  -moz-animation-duration: 0.3s;
+  -ms-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 .miss {
-  -moz-animation-duration: .5s;
-  -ms-animation-duration: .5s;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .target {
-  -moz-animation-duration: .2s;
-  -ms-animation-duration: .2s;
-  -webkit-animation-duration: .2s;
-  animation-duration: .2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
 }
 
 .board {
-  -moz-animation-duration: .3s;
-  -ms-animation-duration: .3s;
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
+  -moz-animation-duration: 0.3s;
+  -ms-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 .stats {
-  -moz-animation-duration: .4s;
-  -ms-animation-duration: .4s;
-  -webkit-animation-duration: .4s;
-  animation-duration: .4s;
+  -moz-animation-duration: 0.4s;
+  -ms-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
 
-  -moz-animation-delay: .2s;
-  -ms-animation-delay: .2s;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .logo-text {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
 }
 
 .navbar-brand {
