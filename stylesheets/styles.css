@@ -40,7 +40,7 @@ footer {
 }
 
 .navbar-brand-agile-2 {
-  height: 110px;
+  height: 130px;
 }
 
 .btn-info {
@@ -76,14 +76,14 @@ footer {
 }
 
 .title {
-  font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, Sans-Serif;
   color: #292929;
   font-weight: bold;
   font-size: 2.875em;
 }
 
 .sub-title {
-  font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, Sans-Serif;
   color: #292929;
   font-size: 1.375em;
   line-height: 1.2em;
@@ -95,7 +95,7 @@ footer {
 }
 
 /*INSTRUCTIONS*/
-.reflexions{
+.reflexions {
   text-align: justify;
 }
 .image {
@@ -103,8 +103,8 @@ footer {
   height: 145px;
 }
 
-.movil{
-  display:none;
+.movil {
+  display: none;
 }
 
 .instruction h4 {
@@ -123,7 +123,7 @@ hr {
   text-align: justify;
 }
 
-.reflexions h4{
+.reflexions h4 {
   color: #00a99d;
   font-size: 2.95rem;
   font-weight: bold;
@@ -143,9 +143,8 @@ hr {
   padding-left: 30px;
   padding-right: 20px;
   padding-bottom: 20px;
-  border-radius: 4px
+  border-radius: 4px;
 }
-
 
 .panel-grey {
   background: #e6e9ed;
@@ -155,8 +154,7 @@ hr {
   padding-left: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 4px
-
+  border-radius: 4px;
 }
 
 .toknow ul {
@@ -237,17 +235,12 @@ hr {
     line-height: 1.429;
     vertical-align: top;
     font-size: 23px;
-    width: 17px; 
-  } 
+    width: 17px;
+  }
   .fa-2x {
     font-size: 28px;
+  }
 }
-}
-
-
-
-
-
 
 @media (max-width: 1000px) {
   .invisible-txt {
@@ -276,7 +269,7 @@ hr {
     height: 95px;
   }
   .title {
-    font-family: "Gotham SSm A", "Gotham SSm B", Arial, Helvetica, Sans-Serif;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, Sans-Serif;
     color: #292929;
     font-weight: bold;
     font-size: 2.875em;
@@ -294,12 +287,12 @@ hr {
   }
 
   /*INSTRUCTIONS*/
-  .movil{
-    display:block;
+  .movil {
+    display: block;
   }
 
-  .web{
-    display:none
+  .web {
+    display: none;
   }
 }
 
