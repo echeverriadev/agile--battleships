@@ -4,7 +4,7 @@ footer {
 }
 
 .green-text {
-  color: #00a99d;
+  color: #18598A;
 }
 
 /*CHART*/
@@ -45,8 +45,8 @@ footer {
 
 .btn-info {
   color: #fff;
-  background-color: #00a99d;
-  border-color: #00a99d;
+  background-color: #18598A;
+  border-color: #18598A;
 }
 
 .btn-info:hover {
@@ -63,6 +63,22 @@ footer {
   color: #fff;
   background-color: #00a99d;
   border-color: #00a99d;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #18598A;
+  border-color: #18598A;
+}
+
+.btn-default:active:hover {
+  background: #18598A;
+}
+
+.btn-default:focus {
+  color: #fff;
+  background-color: #00c16e;
+  border-color: #00c16e;
 }
 
 .isotipo {
@@ -108,7 +124,7 @@ footer {
 }
 
 .instruction h4 {
-  color: #00a99d;
+  color: #00c16e;
   font-size: 1.95rem;
   font-weight: bold;
   line-height: 40px;
@@ -124,14 +140,14 @@ hr {
 }
 
 .reflexions h4 {
-  color: #00a99d;
+  color: #18598A;
   font-size: 2.95rem;
   font-weight: bold;
   line-height: 40px;
 }
 
 .toknow h4 {
-  color: #00a99d;
+  color: #18598A;
   font-size: 2.95rem;
   font-weight: bold;
   line-height: 40px;
